@@ -140,129 +140,93 @@
                     <div class="card-box">
                         <h3 class="card-title">Schedule Informations</h3>
                         <div class="row">
-                                <div class="col-12 col-md-6 col-lg-8 col-xl-8">
-                                    <div class="card">
-                                        <div class="card-block">
-                                            <div class="table-responsive">
-                                                <table class="table mb-0 new-patient-table">
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>Day</th>
-                                                            <th>Select</th>
-                                                            <th>Start Time</th>
-                                                            <th>End Time</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Sunday</td>
-                                                            <td><input type="checkbox" id="checkbox" name="status-checkbox" value="status"></td>
-                                                            <td>
-                                                                <div class="time-icon">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="time-icon">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Monday</td>
-                                                            <td><input type="checkbox" id="checkbox" name="status-checkbox" value="status"></td>
-                                                            <td>
-                                                                <div class="time-icon">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="time-icon">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tueday</td>
-                                                            <td><input type="checkbox" id="checkbox" name="status-checkbox" value="status"></td>
-                                                            <td>
-                                                                <div class="time-icon">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="time-icon">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Wednesday</td>
-                                                            <td><input type="checkbox" id="checkbox" name="status-checkbox" value="status"></td>
-                                                            <td>
-                                                                <div class="time-icon">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="time-icon">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </td>
-
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Thursday</td>
-                                                            <td><input type="checkbox" id="checkbox" name="status-checkbox" value="status"></td>
-                                                            <td>
-                                                                <div class="time-icon">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="time-icon">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </td>
-
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Friday</td>
-                                                            <td><input type="checkbox" id="checkbox" name="status-checkbox" value="status"></td>
-                                                            <td>
-                                                                <div class="time-icon">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="time-icon">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Saturday</td>
-                                                            <td><input type="checkbox" id="checkbox" name="status-checkbox" value="status"></td>
-                                                            <td>
-                                                                <div class="time-icon">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="time-icon">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                    <div class="col-lg-8 offset-lg-2">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group form-focus">
+                                        <label class="focus-label">From</label>
+                                        <div class="cal-icon">
+                                            <input class="form-control floating datetimepicker" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group form-focus">
+                                        <label class="focus-label">To</label>
+                                        <div class="cal-icon">
+                                            <input class="form-control floating datetimepicker" type="text">
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Doctor Name</label>
+                                        <select class="select">
+                                            <option>Select</option>
+                                            <option>Doctor Name 1</option>
+                                            <option>Doctor Name 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Available Days</label>
+                                        <select class="select" multiple>
+                                            <option>Select Days</option>
+                                            <option selected>Sunday</option>
+                                            <option selected>Monday</option>
+                                            <option>Tuesday</option>
+                                            <option>Wednesday</option>
+                                            <option>Thursday</option>
+                                            <option>Friday</option>
+                                            <option>Saturday</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Start Time</label>
+                                        <div class="time-icon">
+                                            <input type="text" class="form-control" id="datetimepicker3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>End Time</label>
+                                        <div class="time-icon">
+                                            <input type="text" class="form-control" id="datetimepicker4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Note</label>
+                                <textarea cols="30" rows="4" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="display-block">Schedule Status</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="status" id="product_active" value="option1" checked>
+                                    <label class="form-check-label" for="product_active">
+                                    Active
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="status" id="product_inactive" value="option2">
+                                    <label class="form-check-label" for="product_inactive">
+                                    Inactive
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
                         </div>
                     <div class="card-box">
                         <h3 class="card-title">Contact Informations</h3>

@@ -11,6 +11,16 @@
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <style type="text/css">
+        @media print {
+    body{
+        width: 21cm;
+        height: 29.7cm;
+        margin: 30mm 45mm 30mm 45mm; 
+        /* change the margins as you want them to be. */
+   } 
+}
+    </style>
 
 </head>
 
@@ -94,6 +104,7 @@
                         </div>
                     </div>
                 </div>
+                <page size="A4">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
@@ -117,7 +128,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row" >
                                     <div class="col-sm-6 col-lg-6 m-b-20">
                                             <h5>Invoice to:</h5>
                                             <ul class="list-unstyled">
@@ -128,7 +139,6 @@
                                                 <li>city,state,pincode</li>
                                                 <li>India</li>
                                                 <li>888-888-4444</li>
-                                                <li><a href="#">emailexamaple@example.com</a></li>
                                             </ul>
                                     </div>
                                 </div>
@@ -202,15 +212,30 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="invoice-info">
+                                    <!--<div class="invoice-info">
                                         <h5>Other information</h5>
                                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed dictum ligula, cursus blandit risus. Maecenas eget metus non tellus dignissim aliquam ut a ex. Maecenas sed vehicula dui, ac suscipit lacus. Sed finibus leo vitae lorem interdum, eu scelerisque tellus fermentum. Curabitur sit amet lacinia lorem. Nullam finibus pellentesque libero, eu finibus sapien interdum vel</p>
-                                    </div>
+                                    </div>-->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+        </page>
+        <page size="A4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                    <div class="invoice-info">
+                                        <h5>Other information</h5>
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed dictum ligula, cursus blandit risus. Maecenas eget metus non tellus dignissim aliquam ut a ex. Maecenas sed vehicula dui, ac suscipit lacus. Sed finibus leo vitae lorem interdum, eu scelerisque tellus fermentum. Curabitur sit amet lacinia lorem. Nullam finibus pellentesque libero, eu finibus sapien interdum vel</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </page>
                 
             </div>
         </div>

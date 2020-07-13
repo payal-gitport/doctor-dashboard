@@ -2805,11 +2805,11 @@ a.fc-event:not([href]) {
 	position: relative;
 }
 .roles-menu > ul > li.active > a {
-	border-color: #009efb;
-	color: #009efb;
+	border-color: #02cc9f;
+	color: #02cc9f;
 }
 .roles-menu > ul > li > a:hover {
-	border-color: #009efb;
+	border-color: #02cc9f;
 	background-color: #eee;
 }
 .material-switch > input[type="checkbox"] {

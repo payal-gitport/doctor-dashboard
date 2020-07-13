@@ -10,6 +10,14 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <style>
+
+        @media screen and (max-width: 600px) {
+          #table-patient {
+            display: none;
+          }
+        }
+</style>
 
 </head>
 
@@ -63,6 +71,9 @@
                             </ul>
                         </li>
                         <li>
+                            <a href="schedule.html"><i class="fa fa-clock-o"></i> <span>Doctor Schedule</span></a>
+                        </li>
+                        <li>
                             <a href="payment.html"><i class="fa fa-money"></i> <span> Payments</span></a>
                         </li>
                         <li>
@@ -83,11 +94,10 @@
         <div class="page-wrapper">
             <div class="content">
                 <div class="row">
-                    <div class="col-12 col-md-12 col-lg-12 col-xl-12 hidden-xs hidden-lg hidden-md">
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-12" id="table-patient">
                         <div class="card member-panel">
                             <div class="card-header table-white">
                                 <h4 class="card-title d-inline-block">Scheduled Patients List </h4>
-                                <a href="#" class="btn btn-secondary btn-rounded float-right">Save Changes</a>
                             </div>
                             <div class="card-body ">
                                 <div class="table-responsive">
